@@ -22,7 +22,7 @@ module.exports = merge(common, {
             new CssMinimizerPlugin(),
             new TerserPlugin(),
             new HtmlWebpackPlugin({
-                template: "./src/template.html",
+                template: "public/index.html",
                 minify: {
                     removeAttributeQuotes: true,
                     collapseWhitespace: true,
