@@ -1,5 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require("path");
 
 module.exports = {
     devtool: 'inline-source-map',
@@ -34,7 +32,7 @@ module.exports = {
                     loader: "file-loader",
                     options: {
                         name: "[name].[hash].[ext]",
-                        outputPath: "imgs"
+                        outputPath: "images"
                     }
                 }
             }
