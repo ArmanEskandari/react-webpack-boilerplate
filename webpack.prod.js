@@ -6,6 +6,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const {InjectManifest} = require("workbox-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = merge(common, {
     mode: "production",
@@ -33,7 +35,20 @@ module.exports = merge(common, {
     },
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].css" }),
-        new CleanWebpackPlugin() // clears dist folder on every build
+        new CleanWebpackPlugin(), // clears dist folder on every build
+        new InjectManifest({
+            swSrc: "./src/sw.js",
+            swDest: "sw.js",
+        }),
+        new CopyPlugin( {
+            patterns: [
+                // copy files to dist folder
+                { from: 'public/favicon.ico', to: '' },
+                { from: 'public/manifest.json', to: '' },
+                { from: 'public/logo192.png', to: '' },
+                { from: 'public/logo512.png', to: '' },
+            ],
+        } ),
     ],
     module: {
         rules: [
