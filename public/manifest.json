@@ -585,7 +585,25 @@
       "sizes": "1024x1024"
     }
   ],
-  "categories": ["pardakhtyari", "banking", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "Open homescreen",
+      "short_name": "Home",
+      "description": "Open homescreen",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icons/android/android-launchericon-192-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "pardakhtyari",
+    "banking",
+    "entertainment"
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#FFFFFF",
