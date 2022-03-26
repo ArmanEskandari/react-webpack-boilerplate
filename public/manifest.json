@@ -585,6 +585,7 @@
       "sizes": "1024x1024"
     }
   ],
+  "categories": ["pardakhtyari", "banking", "entertainment"],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#FFFFFF",
