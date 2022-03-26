@@ -605,7 +605,7 @@
     "entertainment"
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#FFFFFF",
   "background_color": "#221f1f",
   "orientation": "portrait"
