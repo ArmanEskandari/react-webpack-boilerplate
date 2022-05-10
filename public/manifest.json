@@ -605,8 +605,8 @@
     "entertainment"
   ],
   "start_url": ".",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#FFFFFF",
-  "background_color": "#221f1f",
+  "background_color": "#000080",
   "orientation": "portrait"
 }
