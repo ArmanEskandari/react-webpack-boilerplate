@@ -43,10 +43,7 @@ module.exports = merge(common, {
         new CopyPlugin( {
             patterns: [
                 // copy files to dist folder
-                { from: 'public/favicon.ico', to: '' },
-                { from: 'public/manifest.json', to: '' },
-                { from: 'public/logo192.png', to: '' },
-                { from: 'public/logo512.png', to: '' },
+                { from: 'public/assets', to: '' },
             ],
         } ),
     ],
